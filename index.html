@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sohila Abd El Gawad — Data Analyst</title>
+<meta name="description" content="Sohila Abd El Gawad — Junior Data Analyst specializing in Excel, SQL, Power BI and Python. Turning raw data into dashboards, insights and decisions.">
+<meta name="theme-color" content="#2F80ED">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<!-- ============ LOADING SCREEN ============ -->
+<div class="loading-screen" id="loadingScreen">
+  <div class="loader-mark">SA</div>
+  <div class="loader-bar"><span></span></div>
+  <span class="loader-label">Loading dashboard…</span>
+</div>
+
+<!-- scroll progress -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- cursor glow -->
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- ============ NAV ============ -->
+<nav class="nav" id="mainNav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-mark">
+      <span class="nav-mark-badge">SA</span>
+      <span>Sohila<span class="nav-mark-sub">Data Analyst</span></span>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="#about" data-nav>About</a>
+      <a href="#skills" data-nav>Skills</a>
+      <a href="#projects" data-nav>Projects</a>
+      <a href="#experience" data-nav>Experience</a>
+      <a href="#certificates" data-nav>Certificates</a>
+      <a href="#contact" data-nav>Contact</a>
+    </div>
+    <div class="nav-controls">
+      <button type="button" class="nav-ctrl-btn" id="langToggle" title="العربية" aria-label="Switch to Arabic">AR</button>
+      <button type="button" class="nav-ctrl-btn" id="themeToggle" title="Night mode" aria-label="Switch to night mode">☾</button>
+      <a href="#contact" class="btn btn-primary btn-sm nav-cta"><span>Let's talk</span></a>
+      <button class="nav-burger" id="navBurger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" data-nav>About</a>
+  <a href="#skills" data-nav>Skills</a>
+  <a href="#projects" data-nav>Projects</a>
+  <a href="#experience" data-nav>Experience</a>
+  <a href="#certificates" data-nav>Certificates</a>
+  <a href="#contact" data-nav>Contact</a>
+  <div class="mobile-menu-controls">
+    <button type="button" class="nav-ctrl-btn js-lang-toggle">AR</button>
+    <button type="button" class="nav-ctrl-btn js-theme-toggle">☾</button>
+    <a href="#contact" class="btn btn-primary btn-sm">Let's talk</a>
+  </div>
+</div>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="top">
+  <div class="hero-bg" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="particle-field" id="particleField"></div>
+  </div>
+
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <p class="hero-badge reveal" style="--d:.05s"><span class="badge-dot"></span> Cairo, Egypt — Open to Junior Data Analyst roles</p>
+
+      <h1 class="hero-title">
+        <span class="line reveal" style="--d:.12s"><span>Sohila turns raw data</span></span>
+        <span class="line reveal" style="--d:.22s"><span class="grad">into dashboards</span></span>
+        <span class="line reveal" style="--d:.32s"><span>people actually use.</span></span>
+      </h1>
+
+      <p class="hero-role reveal" style="--d:.4s" id="typedRole">Data Analyst</p>
+
+      <p class="hero-sub reveal" style="--d:.48s">Junior Data Analyst with hands-on expertise in Excel, SQL and Power BI, and a growing foundation in Python — building dashboards that turn business questions into clear, decision-ready answers.</p>
+
+      <div class="hero-actions reveal" style="--d:.56s">
+        <a href="#projects" class="btn btn-primary" data-magnetic><span>View dashboards →</span></a>
+        <a href="#contact" class="btn btn-ghost" data-magnetic><span>Get in touch</span></a>
+      </div>
+
+      <div class="hero-stats reveal" style="--d:.66s">
+        <div class="hstat">
+          <span class="hstat-num" data-count="5" data-suffix="+">0</span>
+          <span class="hstat-label">Power BI &amp; Tableau dashboards shipped</span>
+        </div>
+        <div class="hstat">
+          <span class="hstat-num" data-count="26.5" data-suffix="%">0</span>
+          <span class="hstat-label">Churn rate uncovered &amp; explained</span>
+        </div>
+        <div class="hstat">
+          <span class="hstat-num" data-count="120" data-suffix="+">0</span>
+          <span class="hstat-label">Hours of BI &amp; Big Data training</span>
+        </div>
+        <div class="hstat">
+          <span class="hstat-num" data-count="2026" data-suffix="">0</span>
+          <span class="hstat-label">B.Sc. Computers &amp; AI, Cairo University</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal-scale" style="--d:.3s" id="heroVisual">
+      <div class="dash-card dash-profile" data-depth="18">
+        <img src="assets/images/profile/sohila.jpg" alt="Sohila Abd El Gawad">
+        <h3>Sohila Abd El Gawad</h3>
+        <p>Data Analyst</p>
+        <span class="status">● Available for hire</span>
+      </div>
+
+      <div class="dash-card dash-kpi" data-depth="30">
+        <div class="dash-card-head">
+          <span class="dash-card-title">Retention</span>
+          <div class="dash-dot-row"><span></span><span></span><span></span></div>
+        </div>
+        <div class="kpi-num">73.5%</div>
+        <div class="kpi-label">Customers retained</div>
+        <div class="kpi-trend">▲ Segment tracked live</div>
+      </div>
+
+      <div class="dash-card dash-bars" data-depth="22">
+        <div class="dash-card-head">
+          <span class="dash-card-title">Revenue / Quarter</span>
+        </div>
+        <div class="bars-row">
+          <i style="height:38%"></i><i style="height:58%"></i><i style="height:44%"></i>
+          <i style="height:76%"></i><i style="height:66%"></i><i style="height:92%"></i>
+        </div>
+      </div>
+
+      <div class="dash-card dash-donut" data-depth="26">
+        <div class="dash-card-head" style="justify-content:center;">
+          <span class="dash-card-title">SQL · Excel · Power BI</span>
+        </div>
+        <div class="donut-ring"><span>73%</span></div>
+        <div class="kpi-label">Proficiency index</div>
+      </div>
+
+      <div class="dash-card dash-line" data-depth="14">
+        <div class="dash-card-head">
+          <span class="dash-card-title">Insight Velocity</span>
+          <div class="dash-dot-row"><span></span><span></span><span></span></div>
+        </div>
+        <svg viewBox="0 0 220 60" preserveAspectRatio="none">
+          <polyline points="0,44 30,36 60,42 90,20 120,28 150,10 180,18 220,4"
+            fill="none" stroke="url(#lineGrad)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <defs>
+            <linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#2F80ED"/>
+              <stop offset="100%" stop-color="#00C2FF"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scroll-cue">
+    <span>Scroll</span>
+    <div class="scroll-mouse"><i></i></div>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ ABOUT ============ -->
+<section class="section about" id="about">
+  <div class="grid-texture"></div>
+  <div class="container section-inner">
+    <div class="about-grid">
+
+      <div class="about-visual reveal">
+        <div class="about-photo">
+          <img src="assets/images/profile/sohila.jpg" alt="Sohila Abd El Gawad — Data Analyst">
+          <span class="about-chip">B2 English</span>
+          <div class="about-photo-badge">
+            <strong>Sohila Abd El Gawad</strong>
+            <span>Cairo, Egypt</span>
+          </div>
+        </div>
+        <div class="about-quick-facts">
+          <div class="fact-row"><span class="ico">🎓</span><div><b>B.Sc. Computers &amp; AI</b><span>Cairo University — Decision Support, 2022–2026</span></div></div>
+          <div class="fact-row"><span class="ico">🗣️</span><div><b>Arabic (native) · English (B2)</b><span>Comfortable working in bilingual teams</span></div></div>
+          <div class="fact-row"><span class="ico">📍</span><div><b>Based in Cairo</b><span>Open to remote &amp; on-site roles</span></div></div>
+        </div>
+      </div>
+
+      <div class="about-copy">
+        <p class="section-eyebrow eyebrow reveal">(Who I am)</p>
+        <h2 class="section-title reveal">A Junior Data Analyst who turns <b>messy spreadsheets into clear decisions.</b></h2>
+        <p class="lede reveal">I am a recent graduate of Cairo University's Faculty of Computers &amp; Artificial Intelligence, majoring in Decision Support — passionate about transforming data into meaningful insights that support better decision-making.</p>
+        <p class="body-text reveal">I have a strong foundation in data analysis, with hands-on experience in Excel, SQL, Power BI, and Python, and enjoy working with data across its full lifecycle — from cleaning and preparation to analysis, visualization, and reporting.</p>
+        <p class="body-text reveal">Through my academic journey and training programs, I developed the ability to analyze business problems, track key performance indicators, and present data-driven insights in a clear and impactful way.</p>
+
+        <div class="about-timeline reveal">
+          <p class="about-timeline-title">Career objective</p>
+          <div class="tl-track">
+            <div class="tl-node">
+              <h4>Junior Data Analyst</h4>
+              <p>Seeking an opportunity to apply my skills, gain hands-on experience, and continue growing in the data field while contributing to real business impact.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-softskills reveal">
+          <p class="about-timeline-title">Soft skills &amp; interests</p>
+          <div class="chip-row">
+            <span class="chip"><i></i>Attention to detail</span>
+            <span class="chip"><i></i>Analytical thinking</span>
+            <span class="chip"><i></i>Problem-solving</span>
+            <span class="chip"><i></i>Data storytelling</span>
+            <span class="chip"><i></i>Fast learner &amp; adaptable</span>
+            <span class="chip"><i></i>Business intelligence</span>
+            <span class="chip"><i></i>Real-world datasets</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="section skills alt" id="skills">
+  <div class="container section-inner">
+    <div class="section-head">
+      <p class="eyebrow">(What she works with)</p>
+      <h2 class="section-title reveal">A toolkit built for turning data into <b>decisions, not just charts.</b></h2>
+      <p class="section-sub reveal">Six areas cover the full analyst lifecycle — from cleaning raw data to shipping a dashboard stakeholders trust.</p>
+    </div>
+
+    <div class="skills-grid">
+
+      <div class="skill-card reveal" data-progress="90">
+        <div class="skill-icon">📊</div>
+        <h3>Excel</h3>
+        <p>Advanced functions — Pivot Tables, XLOOKUP, IF — plus data cleaning and KPI reporting for fast, reliable spreadsheet analysis.</p>
+        <div class="skill-tools"><span>Pivot Tables</span><span>XLOOKUP</span><span>Data Cleaning</span></div>
+        <div class="skill-progress">
+          <div class="skill-progress-top"><span>Proficiency</span><span class="skill-progress-val">90%</span></div>
+          <div class="skill-progress-track"><div class="skill-progress-fill"></div></div>
+        </div>
+      </div>
+
+      <div class="skill-card reveal" data-progress="88">
+        <div class="skill-icon">📈</div>
+        <h3>Power BI</h3>
+        <p>Building interactive dashboards with DAX measures, data modeling, and performance tracking that stakeholders can filter themselves.</p>
+        <div class="skill-tools"><span>DAX</span><span>Data Modeling</span><span>Dashboards</span></div>
+        <div class="skill-progress">
+          <div class="skill-progress-top"><span>Proficiency</span><span class="skill-progress-val">88%</span></div>
+          <div class="skill-progress-track"><div class="skill-progress-fill"></div></div>
+        </div>
+      </div>
+
+      <div class="skill-card reveal" data-progress="82">
+        <div class="skill-icon">🗄️</div>
+        <h3>SQL &amp; PL/SQL</h3>
+        <p>Writing queries, joins, CTEs and subqueries to pull, aggregate, and validate data straight from the source.</p>
+        <div class="skill-tools"><span>Joins</span><span>CTEs</span><span>Subqueries</span></div>
+        <div class="skill-progress">
+          <div class="skill-progress-top"><span>Proficiency</span><span class="skill-progress-val">82%</span></div>
+          <div class="skill-progress-track"><div class="skill-progress-fill"></div></div>
+        </div>
+      </div>
+
+      <div class="skill-card reveal" data-progress="75">
+        <div class="skill-icon">🐍</div>
+        <h3>Python</h3>
+        <p>Using Pandas and NumPy for data analysis and automation basics — cleaning and reshaping datasets before they reach a dashboard.</p>
+        <div class="skill-tools"><span>Pandas</span><span>NumPy</span><span>Automation</span></div>
+        <div class="skill-progress">
+          <div class="skill-progress-top"><span>Proficiency</span><span class="skill-progress-val">75%</span></div>
+          <div class="skill-progress-track"><div class="skill-progress-fill"></div></div>
+        </div>
+      </div>
+
+      <div class="skill-card reveal" data-progress="80">
+        <div class="skill-icon">🧭</div>
+        <h3>Data Visualization</h3>
+        <p>Translating analysis into visuals people understand at a glance, across Power BI and Tableau.</p>
+        <div class="skill-tools"><span>Power BI</span><span>Tableau</span><span>Matplotlib</span></div>
+        <div class="skill-progress">
+          <div class="skill-progress-top"><span>Proficiency</span><span class="skill-progress-val">80%</span></div>
+          <div class="skill-progress-track"><div class="skill-progress-fill"></div></div>
+        </div>
+      </div>
+
+      <div class="skill-card reveal" data-progress="70">
+        <div class="skill-icon">🏗️</div>
+        <h3>ETL &amp; Data Warehousing</h3>
+        <p>Collecting, cleaning and transforming datasets through ETL processes, with a working understanding of star-schema warehousing.</p>
+        <div class="skill-tools"><span>ETL</span><span>Star Schema</span><span>SQL Server</span></div>
+        <div class="skill-progress">
+          <div class="skill-progress-top"><span>Proficiency</span><span class="skill-progress-val">70%</span></div>
+          <div class="skill-progress-track"><div class="skill-progress-fill"></div></div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="lang-strip reveal">
+      <span class="lang-strip-label">Also comfortable with</span>
+      <div class="lang-pills">
+        <span>SQL Server</span><span>Tableau</span><span>Matplotlib</span><span>Looker Studio</span><span>Hadoop &amp; Spark (foundations)</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="section projects" id="projects">
+  <div class="grid-texture"></div>
+  <div class="container section-inner">
+    <div class="section-head">
+      <p class="eyebrow">(Selected dashboards)</p>
+      <h2 class="section-title reveal">Five projects, five different businesses <b>seen clearly through data.</b></h2>
+      <p class="section-sub reveal">From a decision-support graduation project to Power BI dashboards covering churn, campaigns, marketing ROI and e-commerce sales.</p>
+    </div>
+
+    <div class="project-filter reveal">
+      <button class="pfilter-btn active" data-filter="all">All Projects</button>
+      <button class="pfilter-btn" data-filter="powerbi">Power BI</button>
+      <button class="pfilter-btn" data-filter="tableau">Tableau</button>
+      <button class="pfilter-btn" data-filter="ds">Decision Support</button>
+    </div>
+
+    <div class="project-grid" id="projectGrid">
+
+      <article class="project-card reveal" data-category="ds">
+        <div class="project-media">
+          <span class="project-media-tag">Graduation Project</span>
+          <img src="assets/images/projects/career-recommender-poster.jpg" alt="Tech career recommendation system and skill gap analyzer poster">
+        </div>
+        <div class="project-body">
+          <h3>Career Path Recommendation &amp; Skill Gap Analyzer</h3>
+          <div class="project-tech"><span>Python</span><span>SQL</span><span>Django/Flask</span><span>Power BI</span><span>AHP</span><span>TOPSIS</span></div>
+          <div class="project-pss">
+            <p class="pss-row"><b>Problem</b>Fresh graduates and career changers struggle to match their real skills to the right roles in a fast-moving tech job market.</p>
+            <p class="pss-row"><b>Solution</b>An intelligent decision-support system that matches user skills to job requirements using Cosine Similarity, then ranks career options with AHP and TOPSIS multi-criteria decision-making.</p>
+            <p class="pss-row"><b>Impact</b>Delivers personalized career recommendations, a skill-gap report, recommended learning resources, and a career insights dashboard.</p>
+          </div>
+          <div class="project-metrics">
+            <div><strong>AHP+TOPSIS</strong><span>Ranking engine</span></div>
+            <div><strong>5</strong><span>Team members</span></div>
+          </div>
+          <div class="project-actions">
+            <span class="btn btn-ghost btn-sm" style="pointer-events:none;"><span>🎓 Graduation Project</span></span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-category="powerbi">
+        <div class="project-media">
+          <span class="project-media-tag">Power BI</span>
+          <img src="assets/images/projects/telco-churn-dashboard.png" alt="Telco customer retention and churn analytics dashboard">
+        </div>
+        <div class="project-body">
+          <h3>Telco Customer Retention &amp; Churn Dashboard</h3>
+          <div class="project-tech"><span>Power BI</span><span>DAX</span><span>Data Modeling</span></div>
+          <div class="project-pss">
+            <p class="pss-row"><b>Problem</b>A telecom provider needed visibility into why customers were leaving and which segments were most at risk.</p>
+            <p class="pss-row"><b>Solution</b>Built an interactive Power BI dashboard tracking total customers, churn rate, retention rate and revenue — with slicers across tenure, contract type, payment method and internet service.</p>
+            <p class="pss-row"><b>Impact</b>Surfaced high churn among month-to-month, short-tenure customers, helping target retention strategy at the highest-risk segments.</p>
+          </div>
+          <div class="project-metrics">
+            <div><strong>26.5%</strong><span>Churn rate identified</span></div>
+            <div><strong>73.5%</strong><span>Retention rate tracked</span></div>
+            <div><strong>7K+</strong><span>Customers analyzed</span></div>
+          </div>
+          <div class="project-actions">
+            <span class="btn btn-ghost btn-sm" style="pointer-events:none;"><span>📊 Power BI Dashboard</span></span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-category="powerbi">
+        <div class="project-media">
+          <span class="project-media-tag">Power BI</span>
+          <img src="assets/images/projects/campaign-performance-dashboard.jpg" alt="Customer behavior and campaign performance dashboard">
+        </div>
+        <div class="project-body">
+          <h3>Customer Behavior &amp; Campaign Performance Dashboard</h3>
+          <div class="project-tech"><span>Power BI</span><span>Segmentation</span><span>Campaign Analytics</span></div>
+          <div class="project-pss">
+            <p class="pss-row"><b>Problem</b>Marketing needed to know which campaigns actually converted, and how demographics shaped buying behavior.</p>
+            <p class="pss-row"><b>Solution</b>Designed a dashboard analyzing acceptance rates across five campaigns, spending patterns by age and number of children, and sales split by channel — web, store and catalog.</p>
+            <p class="pss-row"><b>Impact</b>Segmented customers into active, warm and cold groups, giving marketing a clear view of who to target next.</p>
+          </div>
+          <div class="project-metrics">
+            <div><strong>2.24K</strong><span>Customers segmented</span></div>
+            <div><strong>5</strong><span>Campaigns compared</span></div>
+          </div>
+          <div class="project-actions">
+            <span class="btn btn-ghost btn-sm" style="pointer-events:none;"><span>📊 Power BI Dashboard</span></span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-category="powerbi">
+        <div class="project-media">
+          <span class="project-media-tag">Power BI</span>
+          <img src="assets/images/projects/marketing-performance-dashboard.png" alt="Marketing performance, upselling and customer profiling dashboard">
+        </div>
+        <div class="project-body">
+          <h3>Marketing Performance &amp; Customer Analytics Dashboard</h3>
+          <div class="project-tech"><span>Power BI</span><span>ROI Analysis</span><span>Customer Profiling</span></div>
+          <div class="project-pss">
+            <p class="pss-row"><b>Problem</b>Leadership needed one place to see marketing ROI, upselling opportunity, and new-vs-returning customer behavior.</p>
+            <p class="pss-row"><b>Solution</b>Built a unified dashboard tracking revenue, conversions, ad spend and click-through rate across channels, plus upselling revenue by service type and seasonal trend analysis.</p>
+            <p class="pss-row"><b>Impact</b>Identified the highest-ROI channels and most profitable upsell segments to guide budget allocation.</p>
+          </div>
+          <div class="project-metrics">
+            <div><strong>$577K</strong><span>Revenue tracked</span></div>
+            <div><strong>10K</strong><span>Conversions analyzed</span></div>
+          </div>
+          <div class="project-actions">
+            <span class="btn btn-ghost btn-sm" style="pointer-events:none;"><span>📊 Power BI Dashboard</span></span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-category="tableau">
+        <div class="project-media">
+          <span class="project-media-tag">Tableau</span>
+          <img src="assets/images/projects/ecommerce-sales-dashboard.jpg" alt="E-commerce sales dashboard built in Tableau">
+        </div>
+        <div class="project-body">
+          <h3>E-Commerce Sales Dashboard</h3>
+          <div class="project-tech"><span>Tableau</span><span>Revenue Tracking</span><span>Stakeholder Reporting</span></div>
+          <div class="project-pss">
+            <p class="pss-row"><b>Problem</b>Stakeholders needed a clear read on revenue growth and customer behavior trends across cities and product categories.</p>
+            <p class="pss-row"><b>Solution</b>Prepared reports monitoring revenue and customer behavior, tracked KPIs, and presented insights through interactive Tableau dashboards — working directly with stakeholders to define requirements.</p>
+            <p class="pss-row"><b>Impact</b>Supported data-driven decisions with ad-hoc analysis delivered on business need.</p>
+          </div>
+          <div class="project-metrics">
+            <div><strong>2</strong><span>Cities compared</span></div>
+            <div><strong>3</strong><span>Product categories</span></div>
+          </div>
+          <div class="project-actions">
+            <span class="btn btn-ghost btn-sm" style="pointer-events:none;"><span>📈 Tableau Dashboard</span></span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section class="section experience alt" id="experience">
+  <div class="container section-inner">
+    <div class="section-head center">
+      <p class="eyebrow">(Where she's trained &amp; worked)</p>
+      <h2 class="section-title reveal">Experience, in order.</h2>
+      <p class="section-sub reveal">A steady climb from foundational BI training into applied data analytics work.</p>
+    </div>
+
+    <div class="exp-timeline">
+      <div class="exp-line"></div>
+
+      <div class="exp-item reveal">
+        <div class="exp-dot">①</div>
+        <span class="exp-date">Oct 2024 – May 2025</span>
+        <div class="exp-card">
+          <h3>Data Analyst Trainee <span>— DEPI (Digital Egypt Pioneers Initiative)</span></h3>
+          <p class="exp-meta">Data Analytics Track · Google Data Analyst Specialist</p>
+          <ul>
+            <li>Ensured data accuracy, consistency, and validation across datasets</li>
+            <li>Developed BI dashboards using Power BI to track KPIs and support decision-making</li>
+            <li>Analyzed datasets to extract insights and support business decisions</li>
+            <li>Delivered reports and dashboards to communicate insights clearly to stakeholders</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-item reveal">
+        <div class="exp-dot">②</div>
+        <span class="exp-date">Aug 2024 – Sep 2024</span>
+        <div class="exp-card">
+          <h3>Business Intelligence Track <span>— Information Technology Institute (ITI)</span></h3>
+          <p class="exp-meta">BI Development · 120 training hours</p>
+          <ul>
+            <li>Covered data warehousing, SQL Server fundamentals, and advanced SQL queries</li>
+            <li>Built dashboards and reports with Microsoft Power BI and Tableau</li>
+            <li>Practiced statistics fundamentals and Excel-based analysis</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-item reveal">
+        <div class="exp-dot">③</div>
+        <span class="exp-date">Jul 2025</span>
+        <div class="exp-card">
+          <h3>Big Data Analysis Training <span>— NTI &amp; ITIDA</span></h3>
+          <p class="exp-meta">Summer training · 120 hours (90 technical + 30 freelancing)</p>
+          <ul>
+            <li>Completed a structured big-data curriculum with a final score of 80%</li>
+            <li>Built practical skills for handling and analyzing large-scale datasets</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-item reveal">
+        <div class="exp-dot">④</div>
+        <span class="exp-date">Jun 2026 – Jul 2026</span>
+        <div class="exp-card">
+          <h3>Digitera Program — Business Track <span>— iCareer</span></h3>
+          <p class="exp-meta">Ready for Tomorrow · Plan International Egypt</p>
+          <ul>
+            <li>Learned data operations, dashboards and reporting with Power BI and Looker Studio</li>
+            <li>Explored automation and AI workflows using modern business tools</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-item reveal">
+        <div class="exp-dot">⑤</div>
+        <span class="exp-date">Jun 2026 – Jul 2026</span>
+        <div class="exp-card">
+          <h3>Data Analysis &amp; AI Tools Training <span>— Digital Hub &amp; Orange Digital Center</span></h3>
+          <p class="exp-meta">Applied training programme</p>
+          <ul>
+            <li>Performed data cleaning and analysis, and built dashboards in Excel and Power BI</li>
+            <li>Applied AI tools for basic predictive analysis on real datasets</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ CERTIFICATES ============ -->
+<section class="section certificates" id="certificates">
+  <div class="grid-texture"></div>
+  <div class="container section-inner">
+    <div class="cert-header">
+      <div>
+        <p class="eyebrow">(Proof of work)</p>
+        <h2 class="section-title reveal">Certifications</h2>
+        <p class="section-sub reveal">Certifications across data analytics, business intelligence, and business fundamentals.</p>
+      </div>
+      <button class="btn btn-primary cert-add-btn" id="certAddBtn"><span>+ Add certificate</span></button>
+    </div>
+
+    <div class="cert-filter reveal" id="certFilter">
+      <button class="cert-filter-btn active" data-filter="all">All</button>
+      <button class="cert-filter-btn" data-filter="Data Analysis">Data Analysis</button>
+      <button class="cert-filter-btn" data-filter="Business Intelligence">Business Intelligence</button>
+      <button class="cert-filter-btn" data-filter="AI &amp; Data">AI &amp; Data</button>
+      <button class="cert-filter-btn" data-filter="Business">Business</button>
+    </div>
+
+    <div class="cert-grid" id="certGrid">
+      <!-- Populated by JS from data/certificates.json -->
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section contact alt" id="contact">
+  <div class="container section-inner">
+    <div class="section-head center">
+      <p class="eyebrow">(Say hello)</p>
+      <h2 class="section-title reveal">Got a dataset that needs a story?<br>Let's talk.</h2>
+      <p class="section-sub reveal">Open to Junior Data Analyst roles, BI projects, and analytics work — remote or Cairo-based.</p>
+    </div>
+
+    <div class="contact-grid contact-grid-single">
+      <div class="contact-left reveal">
+        <div class="contact-status">
+          <b>● Available for opportunities</b>
+          <span>Usually replies within 24 hours</span>
+        </div>
+
+        <div class="contact-card-list">
+          <a href="mailto:sohila2amer12@gmail.com" class="contact-info-card">
+            <span class="ico">✉️</span>
+            <div><b>Email</b><span>sohila2amer12@gmail.com</span></div>
+          </a>
+          <a href="tel:+201065213474" class="contact-info-card">
+            <span class="ico">📞</span>
+            <div><b>Phone</b><span>+20 106 521 3474</span></div>
+          </a>
+          <a href="https://www.linkedin.com/in/sohila-aamer/" target="_blank" rel="noopener" class="contact-info-card">
+            <span class="ico">in</span>
+            <div><b>LinkedIn</b><span>sohila-aamer</span></div>
+          </a>
+          <div class="contact-info-card" style="pointer-events:none;">
+            <span class="ico">📍</span>
+            <div><b>Location</b><span>Cairo, Egypt</span></div>
+          </div>
+        </div>
+
+        <div class="contact-socials">
+          <a class="social-btn" href="mailto:sohila2amer12@gmail.com" aria-label="Email">✉️</a>
+          <a class="social-btn" href="https://www.linkedin.com/in/sohila-aamer/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+          <a class="social-btn" href="tel:+201065213474" aria-label="Phone">📞</a>
+        </div>
+
+        <div class="map-placeholder">
+          <div class="map-grid"></div>
+          <div class="map-pin"><div class="dot"></div><span>Cairo, Egypt</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <span>© 2026 Sohila Abd El Gawad</span>
+    <span class="footer-mid">Turning data into decisions — one dashboard at a time.</span>
+    <span>Cairo, Egypt</span>
+  </div>
+</footer>
+
+<!-- scroll to top -->
+<button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">↑</button>
+
+<!-- ============ CERT MODAL ============ -->
+<div class="modal-overlay" id="certModalOverlay">
+  <div class="modal" id="certModal">
+    <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+    <h3 id="modalTitle">Add certificate</h3>
+    <form id="certForm">
+      <label>
+        Certificate image
+        <div class="file-drop" id="fileDrop">
+          <img id="filePreview" alt="" style="display:none;">
+          <span id="fileDropText">Click or drag an image here</span>
+        </div>
+        <input type="file" id="certImageInput" accept="image/*" hidden>
+      </label>
+      <label>
+        Title
+        <input type="text" id="certTitleInput" placeholder="e.g. Advanced SQL for Analysts" required>
+      </label>
+      <label>
+        Provider
+        <input type="text" id="certProviderInput" placeholder="e.g. Coursera / DataCamp" required>
+      </label>
+      <label>
+        Date
+        <input type="text" id="certDateInput" placeholder="e.g. Nov 2025" required>
+      </label>
+      <label>
+        Category
+        <select id="certCategoryInput">
+          <option>Data Analysis</option>
+          <option>Business Intelligence</option>
+          <option>AI &amp; Data</option>
+          <option>Business</option>
+        </select>
+      </label>
+      <div class="modal-actions">
+        <button type="button" class="btn btn-ghost" id="modalCancel"><span>Cancel</span></button>
+        <button type="submit" class="btn btn-primary"><span id="modalSubmitLabel">Add certificate</span></button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- lightbox -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+<!-- ============ CHATBOT ============ -->
+<div class="chatbot" id="chatbot">
+  <button class="chatbot-toggle" id="chatbotToggle" type="button" aria-label="Chat with Sohila AI" aria-expanded="false">
+    <img class="chatbot-toggle-avatar" src="assets/images/profile/sohila.jpg" alt="">
+    <span class="chatbot-toggle-icon" aria-hidden="true">&times;</span>
+  </button>
+  <div class="chatbot-panel" id="chatbotPanel" aria-hidden="true" role="dialog" aria-label="Chat with Sohila AI">
+    <div class="chatbot-header">
+      <img class="chatbot-header-avatar" src="assets/images/profile/sohila.jpg" alt="Sohila AI">
+      <div>
+        <strong>Sohila AI</strong>
+        <span>Portfolio assistant · static answers</span>
+      </div>
+    </div>
+    <div class="chatbot-messages" id="chatbotMessages"></div>
+    <div class="chatbot-suggestions" id="chatbotSuggestions"></div>
+    <p class="chatbot-hint">Tap a question above to ask Sohila AI ☝️</p>
+  </div>
+</div>
+
+<script src="js/animations.js"></script>
+<script src="js/chatbot.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

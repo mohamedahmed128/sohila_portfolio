@@ -1,0 +1,50 @@
+[
+  {
+    "id": "depi-data-analytics",
+    "title": "Data Analytics – Google Data Analyst Specialist",
+    "provider": "Digital Egypt Pioneers Initiative (DEPI)",
+    "date": "Nov 2024 – May 2025",
+    "category": "Data Analysis",
+    "img": "assets/images/certificates/depi-data-analytics.jpg"
+  },
+  {
+    "id": "iti-bi-development",
+    "title": "Business Intelligence Track — BI Development (120 hrs)",
+    "provider": "Information Technology Institute (ITI)",
+    "date": "Aug 2024 – Sep 2024",
+    "category": "Business Intelligence",
+    "img": "assets/images/certificates/iti-bi-development.jpg"
+  },
+  {
+    "id": "huawei-hcia",
+    "title": "Huawei Training Course of Artificial Intelligence — HCIA",
+    "provider": "Cairo University × Huawei",
+    "date": "Aug 2024",
+    "category": "AI & Data",
+    "img": "assets/images/certificates/huawei-hcia.jpg"
+  },
+  {
+    "id": "itida-nti-bigdata",
+    "title": "Big Data Analysis — Summer Training (120 hrs)",
+    "provider": "ITIDA × National Telecommunication Institute",
+    "date": "Jul 2025",
+    "category": "Data Analysis",
+    "img": "assets/images/certificates/itida-nti-bigdata.jpg"
+  },
+  {
+    "id": "digitera-business",
+    "title": "Digitera Program — Business Track",
+    "provider": "iCareer × Plan International Egypt",
+    "date": "Jun 2026",
+    "category": "Business",
+    "img": "assets/images/certificates/digitera-business.jpeg"
+  },
+  {
+    "id": "depi-business-english",
+    "title": "Business English Track — Round 2",
+    "provider": "Digital Egypt Pioneers Initiative (DEPI)",
+    "date": "Nov 2024 – May 2025",
+    "category": "Business",
+    "img": "assets/images/certificates/depi-business-english.jpg"
+  }
+]

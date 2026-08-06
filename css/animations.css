@@ -1,0 +1,88 @@
+/* ==========================================================================
+   animations.css — keyframes for hero blobs, floating cards, loaders, etc.
+   ========================================================================== */
+
+@keyframes blobFloat{
+  0%,100%{ transform: translate(0,0) scale(1); }
+  33%{ transform: translate(30px,-24px) scale(1.06); }
+  66%{ transform: translate(-24px,18px) scale(0.96); }
+}
+
+@keyframes floatCard{
+  0%,100%{ transform: translateY(0) rotate(0deg); }
+  50%{ transform: translateY(-14px) rotate(0.6deg); }
+}
+
+@keyframes pingDot{
+  0%{ transform: scale(1); opacity:.7; }
+  75%,100%{ transform: scale(2.4); opacity:0; }
+}
+
+@keyframes caretBlink{
+  0%,49%{ opacity:1; }
+  50%,100%{ opacity:0; }
+}
+
+@keyframes scrollDot{
+  0%{ transform: translateY(0); opacity:1; }
+  70%{ transform: translateY(12px); opacity:0; }
+  71%{ transform: translateY(0); opacity:0; }
+  100%{ transform: translateY(0); opacity:1; }
+}
+
+@keyframes loaderPulse{
+  0%,100%{ transform: scale(1); box-shadow: 0 0 0 0 rgba(47,128,237,.35); }
+  50%{ transform: scale(1.08); box-shadow: 0 0 0 14px rgba(47,128,237,0); }
+}
+
+@keyframes loaderSlide{
+  0%{ transform: translateX(-100%); }
+  100%{ transform: translateX(400%); }
+}
+
+@keyframes gradientShift{
+  0%{ background-position: 0% 50%; }
+  50%{ background-position: 100% 50%; }
+  100%{ background-position: 0% 50%; }
+}
+
+@keyframes particleDrift{
+  0%{ transform: translate3d(0,0,0); opacity:0; }
+  10%{ opacity:.7; }
+  90%{ opacity:.5; }
+  100%{ transform: translate3d(var(--dx,20px), -140px, 0); opacity:0; }
+}
+
+@keyframes fadeSlideUp{
+  from{ opacity:0; transform: translateY(24px); }
+  to{ opacity:1; transform: translateY(0); }
+}
+
+@keyframes chipPop{
+  0%{ transform: scale(.85); opacity:0; }
+  100%{ transform: scale(1); opacity:1; }
+}
+
+@keyframes lineDraw{
+  from{ stroke-dashoffset: 400; }
+  to{ stroke-dashoffset: 0; }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce){
+  *, *::before, *::after{
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Particle field container (behind hero) */
+.particle-field{ position:absolute; inset:0; overflow:hidden; pointer-events:none; z-index:1; }
+.particle{
+  position:absolute; bottom:-10px; border-radius:50%;
+  background: var(--c-primary);
+  opacity:.5;
+  animation: particleDrift linear infinite;
+}
